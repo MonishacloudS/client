@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://social-media-memories-mern.herokuapp.com/posts' });
+const API = axios.create({ baseURL: 'https://social-media-memories-mern.herokuapp.com' });
 
 //const url = 'https://social-media-memories-mern.herokuapp.com/posts';
 
