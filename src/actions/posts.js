@@ -13,8 +13,6 @@ export const getPost = (id) => async (dispatch) => {
     }
 };
 
-
-
 export const getPosts = (page) => async (dispatch) => {
     try {
         dispatch({ type: START_LOADING });
@@ -23,7 +21,7 @@ export const getPosts = (page) => async (dispatch) => {
         dispatch({ type: FETCH_ALL, payload: { data, currentPage, numberOfPages } });
         dispatch({ type: END_LOADING });
     } catch (error) {
-        console.log(error);
+        console.log(error.message);
     }
 };
 
